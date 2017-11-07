@@ -1,2 +1,2 @@
-# DOTCOMMANDS_ALIAS _docker_run 
+# DOTCOMMAND_ALIAS _docker_run 
 FROM mysql
