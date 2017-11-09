@@ -1,6 +1,6 @@
 #!/bin/sh
-echo "alias _docker_run='docker run -ti --rm -v $HOME/.vimrc:/root/.vimrc'" > alias
-echo "alias _docker_run_aws='_docker_run -v $HOME/.aws:/root/.aws'" >> alias
+echo "alias _docker_run='docker run -ti --rm -v \$HOME/.vimrc:/root/.vimrc'" > alias
+echo "alias _docker_run_aws='_docker_run -v \$PWD:/root/dev:rw -v \$HOME/.aws:/root/.aws'" >> alias
 
 for project in `ls src`
 do
