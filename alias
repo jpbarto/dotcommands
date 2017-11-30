@@ -3,6 +3,7 @@ alias _docker_run_aws='_docker_run -v $PWD:/root/dev:rw -v $HOME/.aws:/root/.aws
 alias aws-shell='_docker_run_aws jpbarto/aws-shell:dotcommand'
 alias boto3='_docker_run_aws -v $PWD:/root/dev:rw jpbarto/boto3:dotcommand'
 alias eb='_docker_run_aws  jpbarto/eb:dotcommand'
+alias ecs='_docker_run_aws jpbarto/ecs:dotcommand'
 alias etcdctl='_docker_run jpbarto/etcdctl:dotcommand'
 alias ghci='_docker_run jpbarto/ghci:dotcommand'
 alias golang='_docker_run -v $HOME:/root -v $PWD:/root/dev:rw jpbarto/golang:dotcommand'
